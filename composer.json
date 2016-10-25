@@ -1,0 +1,17 @@
+{
+  "name": "palmtree/template",
+  "description": "Template component for Palmtree PHP",
+  "type": "library",
+  "license": "GPL2",
+  "authors": [
+    {
+      "name": "andyexeter",
+      "email": "palmer.andy@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Palmtree\\Template\\": ""
+    }
+  }
+}
