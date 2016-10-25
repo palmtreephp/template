@@ -1,6 +1,7 @@
 <?php
 
 namespace Palmtree\Template;
+use Palmtree\ArgParser\ArgParser;
 
 /**
  * Class Template
@@ -155,17 +156,8 @@ class Template implements \ArrayAccess {
 	}
 
 	private function parseArgs( $args = [] ) {
-		if ( is_string( $args ) ) {
-			$args = [ 'file' => $args ];
-		}
+		$parser = new ArgParser( $args, 'file' );
 
-		$callback = [ $this ];
-		foreach ( $args as $key => $value ) {
-			$method      = 'set' . ucfirst( $key );
-			$callback[1] = $method;
-			if ( is_callable( $callback ) ) {
-				$this->$method( $value );
-			}
-		}
+		$parser->parseSetters( $this );
 	}
 }
