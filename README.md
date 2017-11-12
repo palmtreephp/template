@@ -1,6 +1,8 @@
 # Palmtree PHP Template
 
-### Usage
+Templating component for Palmtree PHP.
+
+## Usage
 ```php
 <?php
 use Palmtree\Template\Template;
@@ -30,3 +32,7 @@ echo $template;
 </html>
 
 ```
+
+## License
+
+Released under the [MIT license](LICENSE)
