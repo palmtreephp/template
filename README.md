@@ -1,6 +1,6 @@
 # Palmtree PHP Template
 
-Templating component for Palmtree PHP.
+Templating component for Palmtree PHP
 
 ## Usage
 ```php
