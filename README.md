@@ -5,18 +5,16 @@
 <?php
 use Palmtree\Template\Template;
 
-require_once dirname( __DIR__ ) . '/vendor/autoload.php';
-
-$template = new Template( 'front-page.php' );
+$template = new Template('front-page.php');
 
 $template['document_title'] = 'Hello World Site';
 $template['heading']        = 'Hello World';
 $template['content']        = '<p>Welcome to the Hello World site</p>';
 
-echo $template->render();
+echo $template;
 ```
 
-```php
+```html
 <!-- front-page.php -->
 <!doctype html>
 <html>
